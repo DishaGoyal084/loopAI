@@ -6,7 +6,7 @@ const { enqueueIngestion } =require('./processor.js');
 const app = express();
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 app.post('/ingest', (req, res) => {
   const { ids, priority } = req.body;
